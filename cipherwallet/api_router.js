@@ -304,10 +304,8 @@ module.exports = {
 
         // signup and registration operations have a reg_meta entry
         var reg_meta = rq.body['reg_meta'];
-        if (reg_meta) {
-            delete rq.body['reg_meta'];
+        if (reg_meta) 
             var reg_tag = reg_meta['tag'];
-        }
 
         var ret_dict = {};
         if (operation == globals.OP_REGISTRATION) {
@@ -376,7 +374,7 @@ module.exports = {
         if (operation != globals.OP_REGISTRATION) {
             // store the request payload (i.e. data from the mobile app) in the temporary storage, 
             //    so that the next poll will find it
-            tmpstore.set_user_data(session, rq.body, function(err) {
+            tmpstore.set_user_data(session, rq.body.user_data, function(err) {
                 if (err) {
                     rp.status(500).end(); return;
                 } else {
