@@ -91,7 +91,7 @@ app.post("/user/:user_id", function(rq, rp) {
 			    // ====== YOU MAY CALL THE set_qr_login_data() FUNCTION DIRECTLY HERE ======
 			    // === just make sure to pass in a tag= parameter in your POST request,  ===
 			    // === having the same value as the qrContainerID property; like in our  ===
-			    // === example, this would be tag=signup_form_qr and  here we would call ===
+			    // === example, this would be tag=signup_form_qr, and we would call      ===
 			    // ===     rq.body.user_id = rq.body.email;                              ===
 			    // ===     cw_router_lib.set_qr_login_data(rq, rp);                      ===
 			    // =========================================================================
@@ -106,7 +106,7 @@ app.post("/user/:user_id", function(rq, rp) {
 });
 
 // definitely find some better server than this...
-var HTTP_PORT = 8080
-app.listen(HTTP_PORT);
+var HTTP_PORT = 8050
+app.listen(HTTP_PORT, "127.0.0.1");
 console.log("server started on :" + HTTP_PORT)
 
