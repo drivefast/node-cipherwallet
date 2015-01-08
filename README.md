@@ -25,11 +25,15 @@ For details, keep on reading.
 Terraforming
 =
 Clone the cipherwallet sdk project:
+
     git clone https://github.com/drivefast/node-cipherwallet.git
+
 If you're unfamiliar with git, cloning will essentially create a directory called ```node-cipherwallet``` in your website root folder, and will copy all the SDK's files there.
 
 The files located directly under ```node-cipherwallet/``` are a sample website, powered by an [express] framework. The actual cipherwallet SDK files end up in the ```node-cipherwallet/cipherwallet``` directory. Easiest way to wire up the SDK to your website is to create a symbolic link in your website root directory, to the directory that contains the cipherwallet scripts. In Linux, that would be:
+
     ln -s node-cipherwallet/cipherwallet /your/website/root/cipherwallet 
+
 Make sure that your website prohibits dir and view / download operations from the ```cipherwallet``` directory.
 
 The SDK comes with two sample files: ```constants.sample.js``` and ```hooks.sample.js```. Duplicate these files but remove the word ```sample``` from their name, such that their names become ```constants.js``` and ```hooks.js```. Remember to make sure that the content of these files is NOT available to the outside world, as they will end up storing sensitive information. Carefully mask them out in your .htaccess file (if using apache), issue a 404 Not Found error when they're called directly in nginx - you get the point.
