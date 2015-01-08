@@ -52,7 +52,9 @@ The SDK offers all the tools to generate the cipherwallet API request for the QR
 Starting with the checkout page on your website, make sure you have an ID assigned to every input field in the html form. Create the service in the [dashboard] page, indicate you will be using the Node.js SDK, and configure all the settings and parameters you need.
 
 In the javascript code of your checkout web page, load the ```cipherwallet/cipherwallet.js``` module:
+
     <script src="cipherwallet/cipherwallet.js" type="text/javascript"></script> 
+
 Find a place to display the QR code, and create a ```<div>``` container for it. Instantiate a ```Cipherwallet``` object, and provide the initialization variables:
 - ```qrContainerID``` = the id of your ```<div>``` html container we just mentioned
 - ```detailsURL``` = where the user's browser gets redirected when they click on the QR code, or on the "What's This" hyperlink underneath
