@@ -141,10 +141,10 @@ This is it!
   [account management page]: http://www.cipherwallet.com/home.html
   [landing page]: http://www.cipherwallet.com/user.html
   [API documentation]: http://www.cipherwallet.com/cust_doc.html
-  [checkout service documentation]: http://www.cipherwallet.com/cust_doc.html#checkout
-  [signup service documentation]: http://www.cipherwallet.com/cust_doc.html#signup
-  [login service documentation]: http://www.cipherwallet.com/cust_doc.html#login
-  [registration service documentation]: http://www.cipherwallet.com/cust_doc.html#registration
+  [checkout service documentation]: http://www.cipherwallet.com/docs.html#checkout
+  [signup service documentation]: http://www.cipherwallet.com/docs.html#signup
+  [login service documentation]: http://www.cipherwallet.com/docs.html#login
+  [registration service documentation]: http://www.cipherwallet.com/docs.html#registration
   [express]: http://expressjs.com
   [any-db]: https://github.com/grncdr/node-any-db
   [1-click]: http://www.amazon.com/gp/help/customer/display.html?nodeId=468482
